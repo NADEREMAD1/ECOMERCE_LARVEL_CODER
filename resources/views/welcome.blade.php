@@ -1,8 +1,7 @@
 @extends('layout')
 @section('content')
-        {{-- Start Slider one  --}}
-        
-        <div class="container mt-1 w-100 bg-dark pb-5">
+    {{-- Start Slider one  --}}
+    <div class="container mt-1 w-100 bg-dark pb-5">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -63,7 +62,7 @@
             </button>
         </div>
     </div>
-        {{-- Start Slider one  --}}
+    {{-- Start Slider one  --}}
 
     {{-- start info  --}}
     <div class="container-fluid mt-5 mb-3 bg-white p-3">
@@ -119,310 +118,544 @@
         </div>
     </div>
     {{-- start info  --}}
+
     {{-- Start Top Rate --}}
-    <div class="container-fluid">
-            <h2 class="text-center"> TOP RATE </h2>
-          <div class="row pt-5 w-100 m-auto">
-            <div class="bg-white col-12 col-lg-2 col-md-4 p-4 ms-1 mb-1">
-                <p class="p-1 text-center">
-                    Turtle Beach Amplified Gaming Headset
-                </p>
-                <div class="container w-75 m-auto">
-                    <img src="{{ asset('Front/img/rate7.png') }}" class="w-100 img-fluid" alt="">
-                </div>
+    <div class="container-fluid w-100">
+        <h2 class="text-center"> TOP RATE </h2>
+        <div class="row pt-5">
+            <div class=" col-12 col-lg-3 col-md-4 mb-3">
+                <div class="card p-3 mb-1">
+                    <p class="text-center">
+                        Turtle Beach Amplified Gaming Headset
+                    </p>
+                    <div class="container w-50 m-auto">
+                        <img src="{{ asset('Front/img/rate7.png') }}" class="w-100 img-fluid" alt="">
+                    </div>
 
-                <div class="container d-flex mt-3">
-                    <div class="w-75">
-                        <ul class="list-group ">
-                            <li class="list-group"><span class="text-danger">PRICE : 123$</span></li>
-                        </ul>
+                    <div class="container d-flex mt-3">
+                        <div class="w-75">
+                            <ul class="list-group ">
+                                <li class="list-group"><span class="text-danger">PRICE : 123$</span></li>
+                            </ul>
+                        </div>
+                        <div class="w-25 d-flex">
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
                     </div>
-                    <div class="w-25 d-flex">
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+                    <button class="btn btn-danger w-100 mt-3 m-auto">Sell Now</button>
                 </div>
-                <button class="btn btn-danger w-100 mt-3 m-auto">Sell Now</button>
             </div>
-            <div class="bg-white col-12 col-lg-2 col-md-4 p-4 ms-1 mb-1">
-                <p class="p-1 text-center">
-                    Turtle Beach Amplified Gaming Headset
-                </p>
-                <div class="container w-75 m-auto">
-                    <img src="{{ asset('Front/img/rate8.png') }}" class="w-100 img-fluid" alt="">
-                </div>
+            <div class=" col-12 col-lg-3 col-md-4 mb-3">
+                <div class="card p-3 mb-1">
+                    <p class="text-center">
+                        Turtle Beach Amplified Gaming Headset
+                    </p>
+                    <div class="container w-50 m-auto">
+                        <img src="{{ asset('Front/img/rate7.png') }}" class="w-100 img-fluid" alt="">
+                    </div>
 
-                <div class="container d-flex mt-3">
-                    <div class="w-75">
-                        <ul class="list-group ">
-                            <li class="list-group"><span class="text-danger">PRICE : 123$</span></li>
-                        </ul>
+                    <div class="container d-flex mt-3">
+                        <div class="w-75">
+                            <ul class="list-group ">
+                                <li class="list-group"><span class="text-danger">PRICE : 123$</span></li>
+                            </ul>
+                        </div>
+                        <div class="w-25 d-flex">
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
                     </div>
-                    <div class="w-25 d-flex">
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+                    <button class="btn btn-danger w-100 mt-3 m-auto">Sell Now</button>
                 </div>
-                <button class="btn btn-danger w-100 mt-3 m-auto">Sell Now</button>
             </div>
-            <div class="bg-white col-12 col-lg-2 col-md-4 p-4 ms-1 mb-1">
-                <p class="p-1 text-center">
-                    Turtle Beach Amplified Gaming Headset
-                </p>
-                <div class="container w-75 m-auto">
-                    <img src="{{ asset('Front/img/rate3.png') }}" class="w-100 img-fluid" alt="">
-                </div>
+            <div class=" col-12 col-lg-3 col-md-4 mb-3">
+                <div class="card p-3 mb-1">
+                    <p class="text-center">
+                        Turtle Beach Amplified Gaming Headset
+                    </p>
+                    <div class="container w-50 m-auto">
+                        <img src="{{ asset('Front/img/rate7.png') }}" class="w-100 img-fluid" alt="">
+                    </div>
 
-                <div class="container d-flex mt-3">
-                    <div class="w-75">
-                        <ul class="list-group ">
-                            <li class="list-group"><span class="text-danger">PRICE : 123$</span></li>
-                        </ul>
+                    <div class="container d-flex mt-3">
+                        <div class="w-75">
+                            <ul class="list-group ">
+                                <li class="list-group"><span class="text-danger">PRICE : 123$</span></li>
+                            </ul>
+                        </div>
+                        <div class="w-25 d-flex">
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
                     </div>
-                    <div class="w-25 d-flex">
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+                    <button class="btn btn-danger w-100 mt-3 m-auto">Sell Now</button>
                 </div>
-                <button class="btn btn-danger w-100 mt-3 m-auto">Sell Now</button>
             </div>
-            <div class="bg-white col-12 col-lg-2 col-md-4 p-4 ms-1 mb-1">
-                <p class="p-1 text-center">
-                    Turtle Beach Amplified Gaming Headset
-                </p>
-                <div class="container w-75 m-auto">
-                    <img src="{{ asset('Front/img/rate4.png') }}" class="w-100 img-fluid" alt="">
-                </div>
+            <div class=" col-12 col-lg-3 col-md-4 mb-3">
+                <div class="card p-3 mb-1">
+                    <p class="text-center">
+                        Turtle Beach Amplified Gaming Headset
+                    </p>
+                    <div class="container w-50 m-auto">
+                        <img src="{{ asset('Front/img/rate7.png') }}" class="w-100 img-fluid" alt="">
+                    </div>
 
-                <div class="container d-flex mt-3">
-                    <div class="w-75">
-                        <ul class="list-group ">
-                            <li class="list-group"><span class="text-danger">PRICE : 123$</span></li>
-                        </ul>
+                    <div class="container d-flex mt-3">
+                        <div class="w-75">
+                            <ul class="list-group ">
+                                <li class="list-group"><span class="text-danger">PRICE : 123$</span></li>
+                            </ul>
+                        </div>
+                        <div class="w-25 d-flex">
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
                     </div>
-                    <div class="w-25 d-flex">
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+                    <button class="btn btn-danger w-100 mt-3 m-auto">Sell Now</button>
                 </div>
-                <button class="btn btn-danger w-100 mt-3 m-auto">Sell Now</button>
             </div>
-            <div class="bg-white col-12 col-lg-2 col-md-4 p-4 ms-1 mb-1">
-                <p class="p-1 text-center">
-                    Turtle Beach Amplified Gaming Headset
-                </p>
-                <div class="container w-75 m-auto">
-                    <img src="{{ asset('Front/img/rate5.png') }}" class="w-100 img-fluid" alt="">
-                </div>
+            <div class=" col-12 col-lg-3 col-md-4 mb-3">
+                <div class="card p-3 mb-1">
+                    <p class="text-center">
+                        Turtle Beach Amplified Gaming Headset
+                    </p>
+                    <div class="container w-50 m-auto">
+                        <img src="{{ asset('Front/img/rate7.png') }}" class="w-100 img-fluid" alt="">
+                    </div>
 
-                <div class="container d-flex mt-3">
-                    <div class="w-75">
-                        <ul class="list-group ">
-                            <li class="list-group"><span class="text-danger">PRICE : 123$</span></li>
-                        </ul>
+                    <div class="container d-flex mt-3">
+                        <div class="w-75">
+                            <ul class="list-group ">
+                                <li class="list-group"><span class="text-danger">PRICE : 123$</span></li>
+                            </ul>
+                        </div>
+                        <div class="w-25 d-flex">
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
                     </div>
-                    <div class="w-25 d-flex">
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+                    <button class="btn btn-danger w-100 mt-3 m-auto">Sell Now</button>
                 </div>
-                <button class="btn btn-danger w-100 mt-3 m-auto">Sell Now</button>
             </div>
-            <div class="bg-white col-12 col-lg-2 col-md-4 p-4 ms-1 mb-1">
-                <p class="p-1 text-center">
-                    Turtle Beach Amplified Gaming Headset
-                </p>
-                <div class="container w-75 m-auto">
-                    <img src="{{ asset('Front/img/rate6.png') }}" class="w-100 img-fluid" alt="">
-                </div>
+            <div class=" col-12 col-lg-3 col-md-4 mb-3">
+                <div class="card p-3 mb-1">
+                    <p class="text-center">
+                        Turtle Beach Amplified Gaming Headset
+                    </p>
+                    <div class="container w-50 m-auto">
+                        <img src="{{ asset('Front/img/rate7.png') }}" class="w-100 img-fluid" alt="">
+                    </div>
 
-                <div class="container d-flex mt-3">
-                    <div class="w-75">
-                        <ul class="list-group ">
-                            <li class="list-group"><span class="text-danger">PRICE : 123$</span></li>
-                        </ul>
+                    <div class="container d-flex mt-3">
+                        <div class="w-75">
+                            <ul class="list-group ">
+                                <li class="list-group"><span class="text-danger">PRICE : 123$</span></li>
+                            </ul>
+                        </div>
+                        <div class="w-25 d-flex">
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
                     </div>
-                    <div class="w-25 d-flex">
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+                    <button class="btn btn-danger w-100 mt-3 m-auto">Sell Now</button>
                 </div>
-                <button class="btn btn-danger w-100 mt-3 m-auto">Sell Now</button>
             </div>
-            <div class="bg-white col-12 col-lg-2 col-md-4 p-4 ms-1 mb-1">
-                <p class="p-1 text-center">
-                    Turtle Beach Amplified Gaming Headset
-                </p>
-                <div class="container w-75 m-auto">
-                    <img src="{{ asset('Front/img/rate4.png') }}" class="w-100 img-fluid" alt="">
-                </div>
+            <div class=" col-12 col-lg-3 col-md-4 mb-3">
+                <div class="card p-3 mb-1">
+                    <p class="text-center">
+                        Turtle Beach Amplified Gaming Headset
+                    </p>
+                    <div class="container w-50 m-auto">
+                        <img src="{{ asset('Front/img/rate7.png') }}" class="w-100 img-fluid" alt="">
+                    </div>
 
-                <div class="container d-flex mt-3">
-                    <div class="w-75">
-                        <ul class="list-group ">
-                            <li class="list-group"><span class="text-danger">PRICE : 123$</span></li>
-                        </ul>
+                    <div class="container d-flex mt-3">
+                        <div class="w-75">
+                            <ul class="list-group ">
+                                <li class="list-group"><span class="text-danger">PRICE : 123$</span></li>
+                            </ul>
+                        </div>
+                        <div class="w-25 d-flex">
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
                     </div>
-                    <div class="w-25 d-flex">
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+                    <button class="btn btn-danger w-100 mt-3 m-auto">Sell Now</button>
                 </div>
-                <button class="btn btn-danger w-100 mt-3 m-auto">Sell Now</button>
             </div>
-            <div class="bg-white col-12 col-lg-2 col-md-4 p-4 ms-1 mb-1">
-                <p class="p-1 text-center">
-                    Turtle Beach Amplified Gaming Headset
-                </p>
-                <div class="container w-75 m-auto">
-                    <img src="{{ asset('Front/img/rate5.png') }}" class="w-100 img-fluid" alt="">
-                </div>
+            <div class=" col-12 col-lg-3 col-md-4 mb-3">
+                <div class="card p-3 mb-1">
+                    <p class="text-center">
+                        Turtle Beach Amplified Gaming Headset
+                    </p>
+                    <div class="container w-50 m-auto">
+                        <img src="{{ asset('Front/img/rate7.png') }}" class="w-100 img-fluid" alt="">
+                    </div>
 
-                <div class="container d-flex mt-3">
-                    <div class="w-75">
-                        <ul class="list-group ">
-                            <li class="list-group"><span class="text-danger">PRICE : 123$</span></li>
-                        </ul>
+                    <div class="container d-flex mt-3">
+                        <div class="w-75">
+                            <ul class="list-group ">
+                                <li class="list-group"><span class="text-danger">PRICE : 123$</span></li>
+                            </ul>
+                        </div>
+                        <div class="w-25 d-flex">
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
                     </div>
-                    <div class="w-25 d-flex">
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+                    <button class="btn btn-danger w-100 mt-3 m-auto">Sell Now</button>
                 </div>
-                <button class="btn btn-danger w-100 mt-3 m-auto">Sell Now</button>
             </div>
-            <div class="bg-white col-12 col-lg-2 col-md-4 p-4 ms-1 mb-1">
-                <p class="p-1 text-center">
-                    Turtle Beach Amplified Gaming Headset
-                </p>
-                <div class="container w-75 m-auto">
-                    <img src="{{ asset('Front/img/rate6.png') }}" class="w-100 img-fluid" alt="">
-                </div>
 
-                <div class="container d-flex mt-3">
-                    <div class="w-75">
-                        <ul class="list-group ">
-                            <li class="list-group"><span class="text-danger">PRICE : 123$</span></li>
-                        </ul>
-                    </div>
-                    <div class="w-25 d-flex">
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
+        </div>
+    </div>
+    {{-- End Top Rate --}}
+
+    {{-- Start Slider Tow  --}}
+    <div class="container-fluid mt-1 w-100 bg-dark pb-3 mb-3">
+        <div id="carouselExampleInterval2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6 ">
+                            <img src="{{ asset('Front/img/offer_banner.png') }}" class="d-block w-25 pt-5 m-auto"
+                                alt="...">
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="container  m-5 p-5">
+                                <div class="tex-white p-5">
+                                    <h4 class="text-white text-uppercase">PlayStation 5 Console</h4>
+                                    <button class="btn btn-warning"> BUY NOW</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <button class="btn btn-danger w-100 mt-3 m-auto">Sell Now</button>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6 ">
+                            <img src="{{ asset('Front/img/rate3.png') }}" class="d-block pt-5 w-75 " alt="...">
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="container  m-5 p-5">
+                                <div class="tex-white p-5">
+                                    <h4 class="text-white text-uppercase">Smartwatch Fitness for iOS</h4>
+                                    <button class="btn btn-warning"> BUY NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6 ">
+                            <img src="{{ asset('Front/img/iphone_14.png') }}" class="d-block w-75 m-auto"
+                                alt="...">
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="container  m-5 p-5">
+                                <div class="tex-white p-5">
+                                    <h4 class="text-white text-uppercase">Headphones ANC Stereo Headset</h4>
+                                    <button class="btn btn-warning"> BUY NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bg-white col-12 col-lg-2 col-md-4 p-4 ms-1 mb-1">
-                <p class="p-1 text-center">
-                    Turtle Beach Amplified Gaming Headset
-                </p>
-                <div class="container w-75 m-auto">
-                    <img src="{{ asset('Front/img/rate6.png') }}" class="w-100 img-fluid" alt="">
-                </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval2"
+                data-bs-slide="prev">
+                {{-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> --}}
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval2"
+                data-bs-slide="next">
+                {{-- <span class="carousel-control-next-icon" aria-hidden="true"></span> --}}
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    {{-- End Slider Tow  --}}
 
-                <div class="container d-flex mt-3">
-                    <div class="w-75">
-                        <ul class="list-group ">
-                            <li class="list-group"><span class="text-danger">PRICE : 123$</span></li>
-                        </ul>
-                    </div>
-                    <div class="w-25 d-flex">
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
+    {{-- start Top Categories --}}
+    <div class="container-fliud p-5">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-md-12 vh-100">
+                <div class="card vh-100">
+                    <h3 class="text-center p-4">Adorkable White Text Typography Hoodie</h3>
+                    <div class="img m-auto">
+                        <img src="{{ asset('Front/img/shirt.webp') }}" width="100%" height="100%" alt="">
                     </div>
                 </div>
-                <button class="btn btn-danger w-100 mt-3 m-auto">Sell Now</button>
+            </div>
+            <div class="col-12 col-lg-6 col-md-12">
+                <div class="row">
+                    <div class="col-12 col-lg-4 mb-1">
+                        <div class="card p-3">
+                            <p class="text-center">Shite Barca
+                            </p>
+                            <div class="img">
+                                <img src="{{ asset('Front/img/FCB.png') }}" class="m-auto w-75 ms-2" width="60%"
+                                    height="60%" alt="">
+                            </div>
+                            <div class="w-75 m-auto mt-3 p-2">
+                                <button class="btn btn-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-1">
+                        <div class="card p-3">
+                            <p class="text-center">Shite Barca
+                            </p>
+                            <div class="img">
+                                <img src="{{ asset('Front/img/FCB.png') }}" class="m-auto w-75 ms-2" width="60%"
+                                    height="60%" alt="">
+                            </div>
+                            <div class="w-75 m-auto mt-3 p-2">
+                                <button class="btn btn-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-1">
+                        <div class="card p-3">
+                            <p class="text-center">Shite Barca
+                            </p>
+                            <div class="img">
+                                <img src="{{ asset('Front/img/FCB.png') }}" class="m-auto w-75 ms-2" width="60%"
+                                    height="60%" alt="">
+                            </div>
+                            <div class="w-75 m-auto mt-3 p-2">
+                                <button class="btn btn-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-1">
+                        <div class="card p-3">
+                            <p class="text-center">Shite Barca
+                            </p>
+                            <div class="img">
+                                <img src="{{ asset('Front/img/FCB.png') }}" class="m-auto w-75 ms-2" width="60%"
+                                    height="60%" alt="">
+                            </div>
+                            <div class="w-75 m-auto mt-3 p-2">
+                                <button class="btn btn-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-1">
+                        <div class="card p-3">
+                            <p class="text-center">Shite Barca
+                            </p>
+                            <div class="img">
+                                <img src="{{ asset('Front/img/FCB.png') }}" class="m-auto w-75 ms-2" width="60%"
+                                    height="60%" alt="">
+                            </div>
+                            <div class="w-75 m-auto mt-3 p-2">
+                                <button class="btn btn-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-1">
+                        <div class="card p-3">
+                            <p class="text-center">Shite Barca
+                            </p>
+                            <div class="img">
+                                <img src="{{ asset('Front/img/FCB.png') }}" class="m-auto w-75 ms-2" width="60%"
+                                    height="60%" alt="">
+                            </div>
+                            <div class="w-75 m-auto mt-3 p-2">
+                                <button class="btn btn-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-        {{-- End Top Rate --}}
-        {{-- Start Slider Tow  --}}
-        <div class="container-fluid mt-1 w-100 bg-dark pb-3 mb-3">
-            <div id="carouselExampleInterval2" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-6 col-md-6 col-lg-6 ">
-                                <img src="{{ asset('Front/img/offer_banner.png') }}" class="d-block w-25 pt-5 m-auto" alt="...">
-                            </div>
-                            <div class="col-6 col-md-6 col-lg-6">
-                                <div class="container  m-5 p-5">
-                                    <div class="tex-white p-5">
-                                        <h4 class="text-white text-uppercase">PlayStation 5 Console</h4>
-                                        <button class="btn btn-warning"> BUY NOW</button>
-                                    </div>
-                                </div>
-                            </div>
-                          
+    {{-- End Top Categories --}}
+
+    {{-- Start Slider Tow  --}}
+    <div class="container-fluid mt-1 w-100 bg-dark pb-3 mb-3">
+        <div id="carouselExampleInterval2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6 ">
+                            <img src="{{ asset('Front/img/offer_banner.png') }}" class="d-block w-25 pt-5 m-auto"
+                                alt="...">
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-6 col-md-6 col-lg-6 ">
-                                <img src="{{ asset('Front/img/rate3.png') }}" class="d-block pt-5 w-75 " alt="...">
-                            </div>
-                            <div class="col-6 col-md-6 col-lg-6">
-                                <div class="container  m-5 p-5">
-                                    <div class="tex-white p-5">
-                                        <h4 class="text-white text-uppercase">Smartwatch Fitness for iOS</h4>
-                                        <button class="btn btn-warning"> BUY NOW</button>
-                                    </div>
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="container  m-5 p-5">
+                                <div class="tex-white p-5">
+                                    <h4 class="text-white text-uppercase">PlayStation 5 Console</h4>
+                                    <button class="btn btn-warning"> BUY NOW</button>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-6 col-md-6 col-lg-6 ">
-                                <img src="{{ asset('Front/img/iphone_14.png') }}" class="d-block w-75 m-auto" alt="...">
-                            </div>
-                            <div class="col-6 col-md-6 col-lg-6">
-                                <div class="container  m-5 p-5">
-                                    <div class="tex-white p-5">
-                                        <h4 class="text-white text-uppercase">Headphones ANC Stereo Headset</h4>
-                                        <button class="btn btn-warning"> BUY NOW</button>
-                                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6 ">
+                            <img src="{{ asset('Front/img/rate3.png') }}" class="d-block pt-5 w-75 " alt="...">
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="container  m-5 p-5">
+                                <div class="tex-white p-5">
+                                    <h4 class="text-white text-uppercase">Smartwatch Fitness for iOS</h4>
+                                    <button class="btn btn-warning"> BUY NOW</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval2"
-                    data-bs-slide="prev">
-                    {{-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> --}}
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval2"
-                    data-bs-slide="next">
-                    {{-- <span class="carousel-control-next-icon" aria-hidden="true"></span> --}}
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6 ">
+                            <img src="{{ asset('Front/img/iphone_14.png') }}" class="d-block w-75 m-auto"
+                                alt="...">
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="container  m-5 p-5">
+                                <div class="tex-white p-5">
+                                    <h4 class="text-white text-uppercase">Headphones ANC Stereo Headset</h4>
+                                    <button class="btn btn-warning"> BUY NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval2"
+                data-bs-slide="prev">
+                {{-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> --}}
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval2"
+                data-bs-slide="next">
+                {{-- <span class="carousel-control-next-icon" aria-hidden="true"></span> --}}
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    {{-- End Slider Tow  --}}
+
+    {{-- start Top Categories --}}
+    <div class="container-fliud p-5">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-md-12">
+                <div class="row">
+                    <div class="col-12 col-lg-4 mb-1">
+                        <div class="card p-3">
+                            <p class="text-center">Shite Barca
+                            </p>
+                            <div class="img">
+                                <img src="{{ asset('Front/img/FCB.png') }}" class="m-auto w-75 ms-2" width="60%"
+                                    height="60%" alt="">
+                            </div>
+                            <div class="w-75 m-auto mt-3 p-2">
+                                <button class="btn btn-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-1">
+                        <div class="card p-3">
+                            <p class="text-center">Shite Barca
+                            </p>
+                            <div class="img">
+                                <img src="{{ asset('Front/img/FCB.png') }}" class="m-auto w-75 ms-2" width="60%"
+                                    height="60%" alt="">
+                            </div>
+                            <div class="w-75 m-auto mt-3 p-2">
+                                <button class="btn btn-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-1">
+                        <div class="card p-3">
+                            <p class="text-center">Shite Barca
+                            </p>
+                            <div class="img">
+                                <img src="{{ asset('Front/img/FCB.png') }}" class="m-auto w-75 ms-2" width="60%"
+                                    height="60%" alt="">
+                            </div>
+                            <div class="w-75 m-auto mt-3 p-2">
+                                <button class="btn btn-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-1">
+                        <div class="card p-3">
+                            <p class="text-center">Shite Barca
+                            </p>
+                            <div class="img">
+                                <img src="{{ asset('Front/img/FCB.png') }}" class="m-auto w-75 ms-2" width="60%"
+                                    height="60%" alt="">
+                            </div>
+                            <div class="w-75 m-auto mt-3 p-2">
+                                <button class="btn btn-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-1">
+                        <div class="card p-3">
+                            <p class="text-center">Shite Barca
+                            </p>
+                            <div class="img">
+                                <img src="{{ asset('Front/img/FCB.png') }}" class="m-auto w-75 ms-2" width="60%"
+                                    height="60%" alt="">
+                            </div>
+                            <div class="w-75 m-auto mt-3 p-2">
+                                <button class="btn btn-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-1">
+                        <div class="card p-3">
+                            <p class="text-center">Shite Barca
+                            </p>
+                            <div class="img">
+                                <img src="{{ asset('Front/img/FCB.png') }}" class="m-auto w-75 ms-2" width="60%"
+                                    height="60%" alt="">
+                            </div>
+                            <div class="w-75 m-auto mt-3 p-2">
+                                <button class="btn btn-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-md-12 vh-100">
+                <div class="card vh-100">
+                    <h3 class="text-center p-4">Adorkable White Text Typography Hoodie</h3>
+                    <div class="img m-auto">
+                        <img src="{{ asset('Front/img/shirt.webp') }}" width="100%" height="100%" alt="">
+                    </div>
+                </div>
             </div>
         </div>
-        {{-- End Slider Tow  --}}
-
+    </div>
+    {{-- End Top Categories --}}
 
 
     {{-- End content index Page --}}
-
-    @endsection()
+@endsection()
