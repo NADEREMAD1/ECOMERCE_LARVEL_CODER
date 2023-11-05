@@ -395,10 +395,10 @@
     </div>
     {{-- End Slider Tow  --}}
 
-    {{-- start Top Categories --}}
+    {{-- start Top Categories 1 --}}
     <div class="container-fliud p-5">
         <div class="row">
-            <div class="col-12 col-lg-6 col-md-12 vh-100">
+            <div class="col-12 col-lg-6 col-md-8 m-auto mb-5">
                 <div class="card vh-100">
                     <h3 class="text-center p-4">Adorkable White Text Typography Hoodie</h3>
                     <div class="img m-auto">
@@ -408,8 +408,23 @@
             </div>
             <div class="col-12 col-lg-6 col-md-12">
                 <div class="row">
-                    <div class="col-12 col-lg-4 mb-1">
-                        <div class="card p-3">
+                    <div class="col-6 col-lg-4 col-md-4 mb-1">
+                        <div class="card">
+                            <p class="text-center">Shite Barca
+                            </p>
+                            <div class="row">
+                                <div class="img">
+                                    <img src="{{ asset('Front/img/FCB.png') }}" class="m-auto w-75 ms-2" width="100%"
+                                    height="100%" alt="">
+                                </div>
+                            </div>
+                            <div class="w-75 m-auto mt-3 p-2">
+                                <button class="btn btn-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4 col-md-4 mb-1">
+                        <div class="card">
                             <p class="text-center">Shite Barca
                             </p>
                             <div class="img">
@@ -421,8 +436,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 mb-1">
-                        <div class="card p-3">
+                    <div class="col-6 col-lg-4 col-md-4 mb-1">
+                        <div class="card">
                             <p class="text-center">Shite Barca
                             </p>
                             <div class="img">
@@ -434,8 +449,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 mb-1">
-                        <div class="card p-3">
+                    <div class="col-6 col-lg-4 col-md-4 mb-1">
+                        <div class="card">
                             <p class="text-center">Shite Barca
                             </p>
                             <div class="img">
@@ -447,8 +462,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 mb-1">
-                        <div class="card p-3">
+                    <div class="col-6 col-lg-4 col-md-4 mb-1">
+                        <div class="card">
                             <p class="text-center">Shite Barca
                             </p>
                             <div class="img">
@@ -460,21 +475,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 mb-1">
-                        <div class="card p-3">
-                            <p class="text-center">Shite Barca
-                            </p>
-                            <div class="img">
-                                <img src="{{ asset('Front/img/FCB.png') }}" class="m-auto w-75 ms-2" width="60%"
-                                    height="60%" alt="">
-                            </div>
-                            <div class="w-75 m-auto mt-3 p-2">
-                                <button class="btn btn-danger">BUY NOW</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 mb-1">
-                        <div class="card p-3">
+                    <div class="col-6 col-lg-4 col-md-4 mb-1">
+                        <div class="card">
                             <p class="text-center">Shite Barca
                             </p>
                             <div class="img">
@@ -490,7 +492,7 @@
             </div>
         </div>
     </div>
-    {{-- End Top Categories --}}
+    {{-- End Top Categories 1 --}}
 
     {{-- Start Slider Tow  --}}
     <div class="container-fluid mt-1 w-100 bg-dark pb-3 mb-3">
@@ -559,13 +561,13 @@
     </div>
     {{-- End Slider Tow  --}}
 
-    {{-- start Top Categories --}}
+    {{-- start Top Categories 2 --}}
     <div class="container-fliud p-5">
         <div class="row">
             <div class="col-12 col-lg-6 col-md-12">
                 <div class="row">
-                    <div class="col-12 col-lg-4 mb-1">
-                        <div class="card p-3">
+                    <div class="col-6 col-lg-4 col-md-4 mb-1">
+                        <div class="card">
                             <p class="text-center">Shite Barca
                             </p>
                             <div class="img">
@@ -577,8 +579,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 mb-1">
-                        <div class="card p-3">
+                    <div class="col-6 col-lg-4 col-md-4 mb-1">
+                        <div class="card">
                             <p class="text-center">Shite Barca
                             </p>
                             <div class="img">
@@ -590,8 +592,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 mb-1">
-                        <div class="card p-3">
+                    <div class="col-6 col-lg-4 col-md-4 mb-1">
+                        <div class="card">
                             <p class="text-center">Shite Barca
                             </p>
                             <div class="img">
@@ -603,8 +605,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 mb-1">
-                        <div class="card p-3">
+                    <div class="col-6 col-lg-4 col-md-4 mb-1">
+                        <div class="card">
                             <p class="text-center">Shite Barca
                             </p>
                             <div class="img">
@@ -616,8 +618,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 mb-1">
-                        <div class="card p-3">
+                    <div class="col-6 col-lg-4 col-md-4 mb-1">
+                        <div class="card">
                             <p class="text-center">Shite Barca
                             </p>
                             <div class="img">
@@ -629,8 +631,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 mb-1">
-                        <div class="card p-3">
+                    <div class="col-6 col-lg-4 col-md-4 mb-1">
+                        <div class="card">
                             <p class="text-center">Shite Barca
                             </p>
                             <div class="img">
@@ -644,7 +646,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 col-md-12 vh-100">
+            <div class="col-12 col-lg-6 col-md-12 ">
                 <div class="card vh-100">
                     <h3 class="text-center p-4">Adorkable White Text Typography Hoodie</h3>
                     <div class="img m-auto">
@@ -654,7 +656,7 @@
             </div>
         </div>
     </div>
-    {{-- End Top Categories --}}
+    {{-- End Top Categories 2 --}}
 
 
     {{-- End content index Page --}}
