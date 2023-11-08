@@ -16,7 +16,10 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand text-white " href="#">Navbar</a>
+            <a class="navbar-brand text-white " href="#">
+                {{-- <img src="{{ asset('Front/img/logo.png') }}" class="w-25" alt=""> --}}
+                Navbar
+            </a>
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,8 +34,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#"> <i class="text-white fa-solid fa-user"></i></a>
                     </li>
-                    <li class="nav-item w-100">
-                        <button class=" nav-link btn btn-primary " type="button" data-bs-toggle="offcanvas"
+                    <li class="nav-item">
+                        <button class=" nav-link btn btn-primary" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <i class="text-white fa-solid fa-bars "></i>
                         </button>
@@ -45,38 +48,42 @@
     {{-- Start offcanvas  --}}
     <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header  bg-dark text-white">
-            <button type="button" class="bg-transparent text-white border border-none" data-bs-dismiss="offcanvas"
+            <button type="button" class="bg-primary border-0 text-white" data-bs-dismiss="offcanvas"
                 aria-label="Close">
-                <i class="fa-solid fa-angles-left "></i>
+                <i class="fa-solid fa-angles-left  "></i>
             </button>
-            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">KLAZA</h5>
         </div>
         <div class="offcanvas-body bg-dark text-white">
             <div class="container-fluid">
                 <ul class="list-group  w-100">
                     <a href="#" class="nav-link">
-                        <li class="list-group">An item</li>
+                        <li class="list-group">home</li>
                     </a>
                     <hr>
-
-                    <a href="#" class="nav-link d-flex p-2">
-                        <i class="fa-solid fa-angles-left"></i>
+                    <a href="{{'shop_view'}}" class="nav-link d-flex p-2">
                         <li class="list-group">
-                            <span class="">A second item</span>
+                            Shop
                         </li>
                     </a>
                     <hr>
                     <a href="#" class="nav-link">
-                        <li class="list-group">A third item</li>
+                        <li class="list-group">
+                            Contact US
+                        </li>
                     </a>
                     <hr>
                     <a href="#" class="nav-link">
-                        <li class="list-group">A fourth item</li>
+                        <li class="list-group">
+                            About
+                        </li>
                     </a>
-                    <hr>
-                    <a href="#" class="nav-link">
-                        <li class="list-group">And a fifth one</li>
-                    </a>
+                    {{--<hr>
+                     <a href="#" class="nav-link">
+                        <li class="list-group">
+
+                        </li>
+                    </a> --}}
                     <hr>
                 </ul>
             </div>
