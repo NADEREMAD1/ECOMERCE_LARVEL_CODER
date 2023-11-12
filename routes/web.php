@@ -20,6 +20,8 @@ Route::get('/', function () {
 
 Route::get('shop_view', [ShopController::class, 'shop_view'])->name('shop_view');
 
+Route::get('product_page', [ShopController::class, 'product_page'])->name('product_page');
+
 
 
 
