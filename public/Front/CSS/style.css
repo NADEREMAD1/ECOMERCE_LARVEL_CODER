@@ -87,11 +87,13 @@ a h6 {
     font-weight: var(--font-wight-tow);
     color: #a5a8a9;
 }
-
-/* End .catagories */
-
-/* start Shop page  */
-
+.container_img_shop{
+position: relative;
+}
+.btn_card_shop{
+    position:relative;
+    top: 100%;
+}
 .card {
     border: none
 }
