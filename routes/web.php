@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ShopController;
+use App\Http\Controllers\User\ShopController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,12 +18,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('shop_view', [ShopController::class, 'shop_view'])->name('shop_view');
+Route::controller(ShopController::class)->group(function () {
 
-Route::get('product_page', [ShopController::class, 'product_page'])->name('product_page');
+    Route::get('/shop_view', 'shop_view')->name('shop_view');
+    Route::get('/product_page', 'product_page')->name('product_page');
 
-
-
+});
 
 
 

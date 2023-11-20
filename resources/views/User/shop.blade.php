@@ -409,21 +409,22 @@
 
     {{-- script  --}}
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-    var addButtonList = document.querySelectorAll('.add_fav');
+          document.addEventListener('DOMContentLoaded', function() {
+                var addButtonList = document.querySelectorAll('.add_fav');
 
-    addButtonList.forEach(function(addButton) {
-        addButton.addEventListener('click', function() {
-            // تبديل بين الأيقونات عن طريق إضافة وإزالة الفئات
-            if (addButton.classList.contains('fa-regular')) {
-                addButton.classList.remove('fa-regular');
-                addButton.classList.add('fa-solid');
-            } else {
-                addButton.classList.remove('fa-solid');
-                addButton.classList.add('fa-regular');
-            }
-        });
-    });
-});
+                addButtonList.forEach(function(addButton) {
+                    addButton.addEventListener('click', function() {
+                        // تبديل بين الأيقونات عن طريق إضافة وإزالة الفئات
+                        if (addButton.classList.contains('fa-regular')) {
+                            addButton.classList.remove('fa-regular');
+                            addButton.classList.add('fa-solid');
+                        } else {
+                            addButton.classList.remove('fa-solid');
+                            addButton.classList.add('fa-regular');
+                        }
+                    });
+                });
+            });
     </script>
+
 @endsection
