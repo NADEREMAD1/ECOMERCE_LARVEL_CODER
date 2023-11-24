@@ -4,58 +4,25 @@
         {{-- Start catogries --}}
         <div class="mt-3 catagories">
             <div class="row w-100  ">
-                <div class="col-12 col-lg-2">
-                    <a href="#" class="card ">
-                        <img src="{{ asset('Front/img/baner3.png') }}" class="img-cat m-auto" width="50%" alt="...">
-                        <div class="text-center w-100">
-                            <span class="text-center">T Shirt</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-12 col-lg-2">
-                    <a href="#" class="card ">
-                        <img src="{{ asset('Front/img/baner3.png') }}" class="img-cat m-auto" width="50%" alt="...">
-                        <div class="text-center w-100">
-                            <span class="text-center">Phone</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-12 col-lg-2">
-                    <a href="#" class="card ">
-                        <img src="{{ asset('Front/img/baner3.png') }}" class="img-cat m-auto" width="50%" alt="...">
-                        <div class="text-center w-100">
-                            <span class="text-center">TV</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-12 col-lg-2">
-                    <a href="#" class="card ">
-                        <img src="{{ asset('Front/img/baner3.png') }}" class="img-cat m-auto" width="50%" alt="...">
-                        <div class="text-center w-100">
-                            <span class="text-center">machien</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-12 col-lg-2">
-                    <a href="#" class="card ">
-                        <img src="{{ asset('Front/img/baner3.png') }}" class="img-cat m-auto " width="50%"
-                            alt="...">
-                        <div class="text-center w-100">
-                            <span class="text-center">Drives</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-12 col-lg-2">
-                    <a href="#" class="card">
-                        <img src="{{ asset('Front/img/baner3.png') }}" class="img-cat align-item-center m-auto"
-                            width="50%" alt="...">
-                        <div class="text-center w-100">
-                            <span class="text-center">Ptinters</span>
-                        </div>
-                    </a>
-                </div>
+                @foreach ($catagories as $cat)
+                    <div class="col-12 col-lg-2">
+                        <a href="#" class="card ">
+                            <img src="{{ asset('image_Catagories/' . $cat->image) }}" class="img-cat m-auto" width="50%"
+                                alt="...">
+                            <div class="text-center w-100">
+                                <span class="text-center">{{ $cat->title }}</span>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
+
+
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+                {{ $catagories->onEachSide(1)->links('pagination::simple-bootstrap-4') }}
             </div>
         </div>
+
         {{-- End catogries --}}
         <div class="container-fluid mt-5">
             <div class="row">
@@ -198,19 +165,20 @@
                 <div class="col-12 col-lg-10 col-md-8">
                     <div class="container w-100 ">
                         <div class="row w-100">
-                            <div class="col-12 col-lg-3 col-md-3 mb-2">
+                            @foreach ($products as $pro )
 
+                            <div class="col-12 col-lg-3 col-md-3 mb-2">
                                 <div class="row card card_shop p-2">
                                     <div class="col-12 container_img_shop">
                                         <div class="img_shop">
-                                            <img src="{{ asset('Front/img/product-01.jpg.webp') }}" alt="s"
-                                                class="w-100">
+                                            {{-- <img src="{{ asset('Front/img/product-01.jpg.webp') }}" alt="s" --}}
+                                          <img src="{{ asset('image_products/' . $pro->image) }}" class="img-cat m-auto" width="50%" class="w-100">
                                         </div>
                                     </div>
                                     <div class="content_img p-1">
                                         <div class="d-flex ps-3">
                                             <a href="{{ route('product_page') }}">
-                                                <h6 class="w-100 pt-2 text-secondary"><span>Esprit Ruffle Shirt</span>
+                                                <h6 class="w-100 pt-2 text-secondary"><span>{{$pro->title}}</span>
                                                 </h6>
                                             </a>
                                             <a class="pt-2 ms-auto">
@@ -218,189 +186,16 @@
                                             </a>
 
                                         </div>
-                                        <span class="m-auto ps-3 text-secondary">Price : 100$</span>
+                                        <span class="m-auto ps-3 text-secondary">Price : {{$pro->price}}$</span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-12 col-lg-3 col-md-3 mb-2">
-
-                                <div class="row card card_shop p-2">
-                                    <div class="col-12 container_img_shop">
-                                        <div class="img_shop">
-                                            <img src="{{ asset('Front/img/product-02.jpg.webp') }}" alt="s"
-                                                class="w-100">
-                                        </div>
-                                    </div>
-                                    <div class="content_img p-1">
-                                        <div class="d-flex ps-3">
-                                            <a href="{{ route('product_page') }}">
-                                                <h6 class="w-100 pt-2 text-secondary"><span>Esprit Ruffle Shirt</span>
-                                                </h6>
-                                            </a>
-                                            <a class="pt-2 ms-auto">
-                                                <i class="text-secondary fa-regular fa-heart add_fav"></i>
-                                            </a>
-
-                                        </div>
-                                        <span class="m-auto ps-3 text-secondary">Price : 100$</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-12 col-lg-3 col-md-3 mb-2">
-
-                                <div class="row card card_shop p-2">
-                                    <div class="col-12 container_img_shop">
-                                        <div class="img_shop">
-                                            <img src="{{ asset('Front/img/product-03.jpg.webp') }}" alt="s"
-                                                class="w-100">
-                                        </div>
-                                    </div>
-                                    <div class="content_img p-1">
-                                        <div class="d-flex ps-3">
-                                            <a href="{{ route('product_page') }}">
-                                                <h6 class="w-100 pt-2 text-secondary"><span>Esprit Ruffle Shirt</span>
-                                                </h6>
-                                            </a>
-                                            <a class="pt-2 ms-auto">
-                                                <i class="text-secondary fa-regular fa-heart add_fav"></i>
-                                            </a>
-
-                                        </div>
-                                        <span class="m-auto ps-3 text-secondary">Price : 100$</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-12 col-lg-3 col-md-3 mb-2">
-
-                                <div class="row card card_shop p-2">
-                                    <div class="col-12 container_img_shop">
-                                        <div class="img_shop">
-                                            <img src="{{ asset('Front/img/product-04.jpg.webp') }}" alt="s"
-                                                class="w-100">
-                                        </div>
-                                    </div>
-                                    <div class="content_img p-1">
-                                        <div class="d-flex ps-3">
-                                            <a href="{{ route('product_page') }}">
-                                                <h6 class="w-100 pt-2 text-secondary"><span>Esprit Ruffle Shirt</span>
-                                                </h6>
-                                            </a>
-                                            <a class="pt-2 ms-auto">
-                                                <i class="text-secondary fa-regular fa-heart add_fav"></i>
-                                            </a>
-
-                                        </div>
-                                        <span class="m-auto ps-3 text-secondary">Price : 100$</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-12 col-lg-3 col-md-3 mb-2">
-
-                                <div class="row card card_shop p-2">
-                                    <div class="col-12 container_img_shop">
-                                        <div class="img_shop">
-                                            <img src="{{ asset('Front/img/product-05.jpg.webp') }}" alt="s"
-                                                class="w-100">
-                                        </div>
-                                    </div>
-                                    <div class="content_img p-1">
-                                        <div class="d-flex ps-3">
-                                            <a href="{{ route('product_page') }}">
-                                                <h6 class="w-100 pt-2 text-secondary"><span>Esprit Ruffle Shirt</span>
-                                                </h6>
-                                            </a>
-                                            <a class="pt-2 ms-auto">
-                                                <i class="text-secondary fa-regular fa-heart add_fav"></i>
-                                            </a>
-
-                                        </div>
-                                        <span class="m-auto ps-3 text-secondary">Price : 100$</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-12 col-lg-3 col-md-3 mb-2">
-
-                                <div class="row card card_shop p-2">
-                                    <div class="col-12 container_img_shop">
-                                        <div class="img_shop">
-                                            <img src="{{ asset('Front/img/product-06.jpg.webp') }}" alt="s"
-                                                class="w-100">
-                                        </div>
-                                    </div>
-                                    <div class="content_img p-1">
-                                        <div class="d-flex ps-3">
-                                            <a href="{{ route('product_page') }}">
-                                                <h6 class="w-100 pt-2 text-secondary"><span>Esprit Ruffle Shirt</span>
-                                                </h6>
-                                            </a>
-                                            <a class="pt-2 ms-auto">
-                                                <i class="text-secondary fa-regular fa-heart add_fav"></i>
-                                            </a>
-
-                                        </div>
-                                        <span class="m-auto ps-3 text-secondary">Price : 100$</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-12 col-lg-3 col-md-3 mb-2">
-
-                                <div class="row card card_shop p-2">
-                                    <div class="col-12 container_img_shop">
-                                        <div class="img_shop">
-                                            <img src="{{ asset('Front/img/product-08.jpg.webp') }}" alt="s"
-                                                class="w-100">
-                                        </div>
-                                    </div>
-                                    <div class="content_img p-1">
-                                        <div class="d-flex ps-3">
-                                            <a href="{{ route('product_page') }}">
-                                                <h6 class="w-100 pt-2 text-secondary"><span>Esprit Ruffle Shirt</span>
-                                                </h6>
-                                            </a>
-                                            <a class="pt-2 ms-auto">
-                                                <i class="text-secondary fa-regular fa-heart add_fav"></i>
-                                            </a>
-
-                                        </div>
-                                        <span class="m-auto ps-3 text-secondary">Price : 100$</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-12 col-lg-3 col-md-3 mb-2">
-
-                                <div class="row card card_shop p-2">
-                                    <div class="col-12 container_img_shop">
-                                        <div class="img_shop">
-                                            <img src="{{ asset('Front/img/product-03.jpg.webp') }}" alt="s"
-                                                class="w-100">
-                                        </div>
-                                    </div>
-                                    <div class="content_img p-1">
-                                        <div class="d-flex ps-3">
-                                            <a href="{{ route('product_page') }}">
-                                                <h6 class="w-100 pt-2 text-secondary"><span>Esprit Ruffle Shirt</span>
-                                                </h6>
-                                            </a>
-                                            <a class="pt-2 ms-auto">
-                                                <i class="text-secondary fa-regular fa-heart add_fav"></i>
-                                            </a>
-
-                                        </div>
-                                        <span class="m-auto ps-3 text-secondary">Price : 100$</span>
-                                    </div>
-                                </div>
-
-                            </div>
+                            @endforeach
 
                         </div>
-
+                        <div class="d-flex justify-content-center mt-5">
+                            {{ $catagories->onEachSide(1)->links('pagination::simple-bootstrap-4') }}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -409,22 +204,21 @@
 
     {{-- script  --}}
     <script>
-          document.addEventListener('DOMContentLoaded', function() {
-                var addButtonList = document.querySelectorAll('.add_fav');
+        document.addEventListener('DOMContentLoaded', function() {
+            var addButtonList = document.querySelectorAll('.add_fav');
 
-                addButtonList.forEach(function(addButton) {
-                    addButton.addEventListener('click', function() {
-                        // تبديل بين الأيقونات عن طريق إضافة وإزالة الفئات
-                        if (addButton.classList.contains('fa-regular')) {
-                            addButton.classList.remove('fa-regular');
-                            addButton.classList.add('fa-solid');
-                        } else {
-                            addButton.classList.remove('fa-solid');
-                            addButton.classList.add('fa-regular');
-                        }
-                    });
+            addButtonList.forEach(function(addButton) {
+                addButton.addEventListener('click', function() {
+                    // تبديل بين الأيقونات عن طريق إضافة وإزالة الفئات
+                    if (addButton.classList.contains('fa-regular')) {
+                        addButton.classList.remove('fa-regular');
+                        addButton.classList.add('fa-solid');
+                    } else {
+                        addButton.classList.remove('fa-solid');
+                        addButton.classList.add('fa-regular');
+                    }
                 });
             });
+        });
     </script>
-
 @endsection

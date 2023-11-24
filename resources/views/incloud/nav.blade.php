@@ -88,12 +88,17 @@
                             About
                         </li>
                     </a>
-                    {{--<hr>
-                     <a href="#" class="nav-link">
-                        <li class="list-group">
+                    <hr>
+                            <div class="dropdown">
+                                <i class="text-white fa-solid fa-user dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                </i>
 
-                        </li>
-                    </a> --}}
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">logout</a></li>
+                                  <li><a class="dropdown-item" href="./registerUser">Rigister</a></li>
+                                  <li><a class="dropdown-item" href="#">Profaile</a></li>
+                                </ul>
+                              </div>
                     <hr>
                 </ul>
             </div>

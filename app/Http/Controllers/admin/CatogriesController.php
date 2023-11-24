@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\catagoriesRequest;
 use App\Models\Catogries;
 use Illuminate\Http\Request;
 
@@ -12,7 +13,7 @@ class CatogriesController extends Controller
         return view('admin.catagories.add_cat');
     }
 
-    public function createCatagories(Request $request){
+    public function createCatagories(catagoriesRequest $request){
 
         $image = $request->file('image');
 
@@ -22,8 +23,10 @@ class CatogriesController extends Controller
         // Move the uploaded image to the desired directory
         $image->move('image_Catagories', $image_name);
 
-        Catogries::create([
+          Catogries::create([
+
             'title'=>$request->title,
+
             'image'=>$image_name,
         ]);
         return back();

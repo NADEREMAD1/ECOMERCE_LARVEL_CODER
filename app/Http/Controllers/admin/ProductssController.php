@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ProductRequest;
 use App\Models\Produts;
 use Illuminate\Http\Request;
 
@@ -12,8 +13,7 @@ class ProductssController extends Controller
 
         return view('admin.products.add_product');
     }
-
-    public function createproducts(Request $request){
+    public function createproducts(ProductRequest $request){
 
         $image = $request->file('image');
 
@@ -28,6 +28,7 @@ class ProductssController extends Controller
             'price'=>$request->price,
             'dec'=>$request->dec,
             'image'=>$image_name,
+            'catagories_id'=>$request->catagories_id,
         ]);
         return back();
     }

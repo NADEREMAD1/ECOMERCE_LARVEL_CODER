@@ -13,6 +13,9 @@ class Produts extends Model
         'price',
         'dec',
         'image',
+        'catagories_id',
     ];
-
+public function catagories(){
+    return $this->belongsTo(Catogries::class);
+}
 }
