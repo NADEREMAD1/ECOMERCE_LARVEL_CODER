@@ -177,14 +177,13 @@
                                     </div>
                                     <div class="content_img p-1">
                                         <div class="d-flex ps-3">
-                                            <a href="{{ route('product_page') }}">
+                                            <a href="product_page/{{$pro->id}}">
                                                 <h6 class="w-100 pt-2 text-secondary"><span>{{$pro->title}}</span>
                                                 </h6>
                                             </a>
                                             <a class="pt-2 ms-auto">
                                                 <i class="text-secondary fa-regular fa-heart add_fav"></i>
                                             </a>
-
                                         </div>
                                         <span class="m-auto ps-3 text-secondary">Price : {{$pro->price}}$</span>
                                     </div>

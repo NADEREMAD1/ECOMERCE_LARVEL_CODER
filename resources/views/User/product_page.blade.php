@@ -9,7 +9,8 @@
                             <div class="col-md-6">
                                 <div class="images p-3">
                                     <div class="text-center p-4"> <img id="main-image"
-                                            src="{{ asset('Front/img/baner1 (2).png') }}" width="250" /> </div>
+                                            src="/image_products/{{ $data->image }}" width="250" /> </div>
+
                                     <div class="thumbnail text-center">
                                         <img onclick="change_image(this)" src="{{ asset('Front/img/baner1 (2).png') }}"
                                             width="70">
@@ -28,17 +29,15 @@
                                               </div>
                                     </div>
                                     <div class="mt-4 mb-3"> <span class="text-uppercase text-muted brand">Orianz</span>
-                                        <h5 class="text-uppercase">Men's slim fit t-shirt</h5>
+                                        <h5 class="text-uppercase">{{$data->title}}</h5>
                                         <div class="price d-flex flex-row align-items-center">
                                             <h4 class="pe-2">
                                                 Price
                                             </h4>
-                                                <h4 class="act-price">: $20</h4>
+                                                <h4 class="act-price">: ${{$data->price}}</h4>
                                         </div>
                                     </div>
-                                    <p class="about">Shop from a wide range of t-shirt from orianz. Pefect for your
-                                        everyday use, you could pair it with a stylish pair of jeans or trousers complete
-                                        the look.</p>
+                                    <p class="about">{{$data->dec}}</p>
                                     <div class="sizes mt-5">
                                         <h6 class="text-uppercase">Size</h6>
                                         <label class="radio">

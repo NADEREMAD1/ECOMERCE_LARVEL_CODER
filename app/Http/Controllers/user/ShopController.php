@@ -19,8 +19,10 @@ class ShopController extends Controller
         // return view('User/shop', compact('catagories'));
     }
 
-    public function product_page()
+    public function product_page($id)
     {
-        return view('User/product_page');
+        $data =  Produts::find($id);
+
+        return view('User/product_page')->with('data',$data);
     }
 }

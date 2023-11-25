@@ -92,7 +92,6 @@
                             <div class="dropdown">
                                 <i class="text-white fa-solid fa-user dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 </i>
-
                                 <ul class="dropdown-menu">
                                   <li><a class="dropdown-item" href="#">logout</a></li>
                                   <li><a class="dropdown-item" href="./registerUser">Rigister</a></li>
