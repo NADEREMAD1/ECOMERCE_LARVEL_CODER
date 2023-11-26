@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ProductRequest;
+use App\Models\Catogries;
 use App\Models\Produts;
 use Illuminate\Http\Request;
 
@@ -11,7 +12,11 @@ class ProductssController extends Controller
 {
     public function Showproducts(){
 
-        return view('admin.products.add_product');
+        $catagories = Catogries::all();
+
+        $products = Produts::all();
+
+        return view('admin.products.add_product', ['catagories' => $catagories , 'products' => $products]);
     }
     public function createproducts(ProductRequest $request){
 
@@ -28,7 +33,7 @@ class ProductssController extends Controller
             'price'=>$request->price,
             'dec'=>$request->dec,
             'image'=>$image_name,
-            'catagories_id'=>$request->catagories_id,
+            'catagories_id' => $request->catagories_id,
         ]);
         return back();
     }

@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('User.layout')
 @section('content')
     <div class="container-fluid">
         {{-- Start catogries --}}

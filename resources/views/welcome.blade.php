@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('User.layout')
 @section('content')
     {{-- Start Slider one  --}}
     <div class="container mt-1 w-100 bg-dark pb-5">

@@ -10,7 +10,10 @@ use Illuminate\Http\Request;
 class CatogriesController extends Controller
 {
     public function ShowCatagories(){
-        return view('admin.catagories.add_cat');
+        $catagories = Catogries::paginate(6);
+
+        return view('admin.catagories.add_cat', ['catagories' => $catagories]);
+
     }
 
     public function createCatagories(catagoriesRequest $request){

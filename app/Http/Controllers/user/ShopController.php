@@ -8,12 +8,13 @@ use App\Models\Produts;
 
 class ShopController extends Controller
 {
+
+
     public function shop_view()
     {
         $catagories = Catogries::paginate(6);
 
         $products = Produts::paginate(6);
-
         return view('User/shop', ['catagories' => $catagories ,'products' => $products]);
         // أو يمكنك استخدام الدالة compact
         // return view('User/shop', compact('catagories'));
