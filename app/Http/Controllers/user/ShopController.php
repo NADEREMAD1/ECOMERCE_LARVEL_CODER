@@ -14,7 +14,7 @@ class ShopController extends Controller
     {
         $catagories = Catogries::paginate(6);
 
-        $products = Produts::paginate(6);
+        $products = Produts::paginate(8);
         return view('User/shop', ['catagories' => $catagories ,'products' => $products]);
         // أو يمكنك استخدام الدالة compact
         // return view('User/shop', compact('catagories'));

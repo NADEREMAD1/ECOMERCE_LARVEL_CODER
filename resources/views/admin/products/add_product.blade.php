@@ -17,8 +17,8 @@
             <input type="text" name="dec" class="form-control" id="Dec" placeholder="Dec">
         </div>
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">catagories_id</label>
-            <input type="text" name="catagories_id" class="form-control" id="exampleFormControlInput1"
+            <label for="exampleFormControlInput1" class="form-label">catogries_id</label>
+            <input type="text" name="catogries_id" class="form-control" id="exampleFormControlInput1"
                 placeholder="catagories id">
         </div>
         <div class="mb-3">
@@ -67,7 +67,7 @@
                             <div class="form-group row">
                                 <label class="col-sm-3 col-form-label">Category</label>
                                 <div class="col-sm-9">
-                                    <select class="form-control" name="catagories_id">
+                                    <select class="form-control" name="catogries_id">
                                         @foreach ($catagories as $cat)
                                         <option value="{{ $cat->id }}">{{ $cat->title }}</option>
                                     @endforeach
@@ -147,6 +147,9 @@
 
                             </tbody>
                         </table>
+                        <div class="d-flex justify-content-center mt-5">
+                            {{ $products->onEachSide(1)->links('pagination::simple-bootstrap-4') }}
+                        </div>
                     </div>
                 </div>
             </div>

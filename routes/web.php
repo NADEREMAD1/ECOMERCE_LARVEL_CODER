@@ -41,6 +41,8 @@ Route::controller(memberController::class)->group(function () {
 Route::controller(AdminController::class)->prefix('dashboard')->group(function () {
 
     Route::get('/', 'dashboard')->name('dashboard');
+    Route::get('/login', 'login_admin')->name('login_admin');
+    Route::get('/register_admin', 'show_register_admin')->name('register_admin');
 
 });
 

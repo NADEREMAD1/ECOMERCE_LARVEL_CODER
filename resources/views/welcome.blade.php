@@ -10,7 +10,7 @@
                             <div class="container  m-5 p-5">
                                 <div class="tex-white p-5">
                                     <h4 class="text-white text-uppercase">PlayStation 5 Console</h4>
-                                    <button class="btn btn-warning"> BUY NOW</button>
+                                    <button class="btn btn-warning"> SHOP NOW</button>
                                 </div>
                             </div>
                         </div>
@@ -25,7 +25,7 @@
                             <div class="container  m-5 p-5">
                                 <div class="tex-white p-5">
                                     <h4 class="text-white text-uppercase">Smartwatch Fitness for iOS</h4>
-                                    <button class="btn btn-warning"> BUY NOW</button>
+                                    <button class="btn btn-warning"> SHOP NOW</button>
                                 </div>
                             </div>
                         </div>
@@ -40,7 +40,7 @@
                             <div class="container  m-5 p-5">
                                 <div class="tex-white p-5">
                                     <h4 class="text-white text-uppercase">Headphones ANC Stereo Headset</h4>
-                                    <button class="btn btn-warning"> BUY NOW</button>
+                                    <button class="btn btn-warning"> SHOP NOW</button>
                                 </div>
                             </div>
                         </div>
@@ -342,7 +342,7 @@
                             <div class="container  m-5 p-5">
                                 <div class="tex-white p-5">
                                     <h4 class="text-white text-uppercase">PlayStation 5 Console</h4>
-                                    <button class="btn btn-warning"> BUY NOW</button>
+                                    <button class="btn btn-warning"> SHOP NOW</button>
                                 </div>
                             </div>
                         </div>
@@ -358,7 +358,7 @@
                             <div class="container  m-5 p-5">
                                 <div class="tex-white p-5">
                                     <h4 class="text-white text-uppercase">Smartwatch Fitness for iOS</h4>
-                                    <button class="btn btn-warning"> BUY NOW</button>
+                                    <button class="btn btn-warning"> SHOP NOW</button>
                                 </div>
                             </div>
                         </div>
@@ -374,7 +374,7 @@
                             <div class="container  m-5 p-5">
                                 <div class="tex-white p-5">
                                     <h4 class="text-white text-uppercase">Headphones ANC Stereo Headset</h4>
-                                    <button class="btn btn-warning"> BUY NOW</button>
+                                    <button class="btn btn-warning"> SHOP NOW</button>
                                 </div>
                             </div>
                         </div>
@@ -419,7 +419,7 @@
                                 </div>
                             </div>
                             <div class="w-75 m-auto mt-3 p-2">
-                                <button class="btn btn-danger">BUY NOW</button>
+                                <button class="btn btn-danger">SHOP NOW</button>
                             </div>
                         </div>
                     </div>
@@ -432,7 +432,7 @@
                                     height="60%" alt="">
                             </div>
                             <div class="w-75 m-auto mt-3 p-2">
-                                <button class="btn btn-danger">BUY NOW</button>
+                                <button class="btn btn-danger">SHOP NOW</button>
                             </div>
                         </div>
                     </div>
@@ -445,7 +445,7 @@
                                     height="60%" alt="">
                             </div>
                             <div class="w-75 m-auto mt-3 p-2">
-                                <button class="btn btn-danger">BUY NOW</button>
+                                <button class="btn btn-danger">SHOP NOW</button>
                             </div>
                         </div>
                     </div>
@@ -458,7 +458,7 @@
                                     height="60%" alt="">
                             </div>
                             <div class="w-75 m-auto mt-3 p-2">
-                                <button class="btn btn-danger">BUY NOW</button>
+                                <button class="btn btn-danger">SHOP NOW</button>
                             </div>
                         </div>
                     </div>
@@ -471,7 +471,7 @@
                                     height="60%" alt="">
                             </div>
                             <div class="w-75 m-auto mt-3 p-2">
-                                <button class="btn btn-danger">BUY NOW</button>
+                                <button class="btn btn-danger">SHOP NOW</button>
                             </div>
                         </div>
                     </div>
@@ -484,7 +484,7 @@
                                     height="60%" alt="">
                             </div>
                             <div class="w-75 m-auto mt-3 p-2">
-                                <button class="btn btn-danger">BUY NOW</button>
+                                <button class="btn btn-danger">SHOP NOW</button>
                             </div>
                         </div>
                     </div>
@@ -508,7 +508,7 @@
                             <div class="container  m-5 p-5">
                                 <div class="tex-white p-5">
                                     <h4 class="text-white text-uppercase">PlayStation 5 Console</h4>
-                                    <button class="btn btn-warning"> BUY NOW</button>
+                                    <button class="btn btn-warning"> SHOP NOW</button>
                                 </div>
                             </div>
                         </div>
@@ -524,7 +524,7 @@
                             <div class="container  m-5 p-5">
                                 <div class="tex-white p-5">
                                     <h4 class="text-white text-uppercase">Smartwatch Fitness for iOS</h4>
-                                    <button class="btn btn-warning"> BUY NOW</button>
+                                    <button class="btn btn-warning"> SHOP NOW</button>
                                 </div>
                             </div>
                         </div>
@@ -540,7 +540,7 @@
                             <div class="container  m-5 p-5">
                                 <div class="tex-white p-5">
                                     <h4 class="text-white text-uppercase">Headphones ANC Stereo Headset</h4>
-                                    <button class="btn btn-warning"> BUY NOW</button>
+                                    <button class="btn btn-warning"> SHOP NOW</button>
                                 </div>
                             </div>
                         </div>
@@ -575,7 +575,7 @@
                                     height="60%" alt="">
                             </div>
                             <div class="w-75 m-auto mt-3 p-2">
-                                <button class="btn btn-danger">BUY NOW</button>
+                                <button class="btn btn-danger">SHOP NOW</button>
                             </div>
                         </div>
                     </div>
@@ -588,7 +588,7 @@
                                     height="60%" alt="">
                             </div>
                             <div class="w-75 m-auto mt-3 p-2">
-                                <button class="btn btn-danger">BUY NOW</button>
+                                <button class="btn btn-danger">SHOP NOW</button>
                             </div>
                         </div>
                     </div>
@@ -601,7 +601,7 @@
                                     height="60%" alt="">
                             </div>
                             <div class="w-75 m-auto mt-3 p-2">
-                                <button class="btn btn-danger">BUY NOW</button>
+                                <button class="btn btn-danger">SHOP NOW</button>
                             </div>
                         </div>
                     </div>
@@ -614,7 +614,7 @@
                                     height="60%" alt="">
                             </div>
                             <div class="w-75 m-auto mt-3 p-2">
-                                <button class="btn btn-danger">BUY NOW</button>
+                                <button class="btn btn-danger">SHOP NOW</button>
                             </div>
                         </div>
                     </div>
@@ -627,7 +627,7 @@
                                     height="60%" alt="">
                             </div>
                             <div class="w-75 m-auto mt-3 p-2">
-                                <button class="btn btn-danger">BUY NOW</button>
+                                <button class="btn btn-danger">SHOP NOW</button>
                             </div>
                         </div>
                     </div>
@@ -640,7 +640,7 @@
                                     height="60%" alt="">
                             </div>
                             <div class="w-75 m-auto mt-3 p-2">
-                                <button class="btn btn-danger">BUY NOW</button>
+                                <button class="btn btn-danger">SHOP NOW</button>
                             </div>
                         </div>
                     </div>

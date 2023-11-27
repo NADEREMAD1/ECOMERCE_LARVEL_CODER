@@ -193,7 +193,7 @@
 
                         </div>
                         <div class="d-flex justify-content-center mt-5">
-                            {{ $catagories->onEachSide(1)->links('pagination::simple-bootstrap-4') }}
+                            {{ $products->onEachSide(1)->links('pagination::simple-bootstrap-4') }}
                         </div>
                     </div>
                 </div>

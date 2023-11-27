@@ -12,9 +12,9 @@ class ProductssController extends Controller
 {
     public function Showproducts(){
 
-        $catagories = Catogries::all();
+        $catagories = Catogries::paginate(6);
 
-        $products = Produts::all();
+        $products = Produts::paginate(6);
 
         return view('admin.products.add_product', ['catagories' => $catagories , 'products' => $products]);
     }
@@ -33,7 +33,7 @@ class ProductssController extends Controller
             'price'=>$request->price,
             'dec'=>$request->dec,
             'image'=>$image_name,
-            'catagories_id' => $request->catagories_id,
+            'catogries_id' => $request->catogries_id,
         ]);
         return back();
     }
