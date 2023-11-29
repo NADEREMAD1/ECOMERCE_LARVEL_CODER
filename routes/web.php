@@ -41,22 +41,25 @@ Route::controller(memberController::class)->group(function () {
 Route::controller(AdminController::class)->prefix('dashboard')->group(function () {
 
     Route::get('/', 'dashboard')->name('dashboard');
-    Route::get('/login', 'login_admin')->name('login_admin');
-    Route::get('/register_admin', 'show_register_admin')->name('register_admin');
+    Route::get('/login', 'create_login_admin')->name('create_login_admin');
+
+    Route::get('/register_admin', 'show_register')->name('show_register');
+
+    Route::post('/create_admin', 'create_admin')->name('create_admin');
 
 });
 
 // Catagories Route
 Route::controller(CatogriesController::class)->prefix('dashboard')->group(function () {
 
-    Route::get('/Catagories', 'ShowCatagories')->name('ShowCatagories');
+    Route::get('/Catagories', 'ShowCatagories')->name('Show.Catagories');
 
-    Route::post('/createCatagories', 'createCatagories')->name('createCatagories');
+    Route::post('/createCatagories', 'createCatagories')->name('create.Catagories');
 });
 // Products Route
 Route::controller(ProductssController::class)->prefix('dashboard')->group(function () {
 
-    Route::get('/products', 'Showproducts')->name('Showproducts');
+    Route::get('/products', 'Showproducts')->name('Show.products');
 
-    Route::post('/createproducts', 'createproducts')->name('createproducts');
+    Route::post('/createproducts', 'createproducts')->name('create.products');
 });

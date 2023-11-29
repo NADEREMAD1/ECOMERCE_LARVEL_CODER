@@ -32,9 +32,10 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Create New Products</h4>
-                    <form  class="form-sample" action="{{ route('createproducts') }}" method="POST" enctype="multipart/form-data">
-                        @include('User.incloud.errors')
+                <form  class="form-sample" action="{{ route('createproducts') }}" method="POST" enctype="multipart/form-data">
+                    @include('admin.includ.errors')
                         @csrf
+
                     <p class="card-description"> Personal info </p>
                     <div class="row">
                         <div class="col-md-6">

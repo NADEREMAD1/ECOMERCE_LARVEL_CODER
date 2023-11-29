@@ -25,7 +25,7 @@ class AdminRequest extends FormRequest
            'name'=>'required|string',
            'email'=>'required|email',
            'password'=>'required|string',
-           'image'=>'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp',
+           'image'=>'image|mimes:jpeg,png,jpg,gif,svg,webp',
         ];
     }
 }

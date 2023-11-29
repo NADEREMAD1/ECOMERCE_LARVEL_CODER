@@ -128,7 +128,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link"  href="{{route('register_admin')}}">
+            <a class="nav-link"  href="{{route('show_register')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-chart-bar"></i>
               </span>

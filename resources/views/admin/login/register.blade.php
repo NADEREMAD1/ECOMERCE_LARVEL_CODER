@@ -1,7 +1,7 @@
 @extends('admin.layout')
 @section('content')
 <h1>
-    s
+   Create New Admin
 </h1>
 <div class="container-scroller">
     <div class="container-fluid page-body-wrapper full-page-wrapper">
@@ -9,8 +9,7 @@
         <div class="content-wrapper full-page-wrapper d-flex auth login-bg">
           <div class="card col-lg-11 mx-auto">
             <div class="card-body">
-              <h3 class="card-title text-left mb-3">Register</h3>
-              <form action="{{'register_admin'}}">
+              <form method="POST" action="{{'create_admin'}}" enctype="multipart/form-data">
                 @csrf
                 @include('admin.includ.errors')
                 <div class="form-group">
