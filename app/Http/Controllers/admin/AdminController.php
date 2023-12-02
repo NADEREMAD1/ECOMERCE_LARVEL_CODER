@@ -37,19 +37,12 @@ class AdminController extends Controller
 
         // Attempt to log in the admin
         $credentials = $request->only('email', 'password');
-        // if (Auth::guard('admin')->attempt($credentials)) {
-        //     // Authentication passed
-        //     return redirect()->route('dashboard');
-        // } else {
-        //     // Authentication failed
-        //     return redirect()->route('admin.login')->with('error', 'Invalid credentials');
-        // }
         if (Auth::guard('admin')->attempt($credentials)) {
             // Authentication passed
             return redirect()->route('dashboard');
         } else {
             // Authentication failed
-            return redirect()->route('admin.login')->withInput()->withErrors(['email' => 'Invalid credentials']);
+            return redirect()->route('show.login.admin')->with('error', 'Invalid credentials');
         }
     }
 
@@ -73,20 +66,13 @@ class AdminController extends Controller
             'image' => $image_name,
         ]);
 
-        //   create Token From Admin
-        // $token = $Cr_admin->createToken($Cr_admin->email)->plainTextToken;
-
-        // $response = [
-        //     'name' => $Cr_admin->name,
-        //     'email' => $Cr_admin->email,
-        //     'token' => $token,
-        // ];
         return back();
     }
 
     public function logout()
     {
         Auth::guard('admin')->logout();
-        return redirect()->route('show_login_admin');
+
+        return view('admin.login.login');
     }
 }

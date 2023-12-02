@@ -18,6 +18,7 @@ class Admin extends Authenticatable
         'password',
         'image',
     ];
+    protected $guard = 'admin';
 
     public function guardAdmin()
     {

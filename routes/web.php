@@ -40,26 +40,32 @@ Route::controller(memberController::class)->group(function () {
 
 Route::controller(AdminController::class)->prefix('dashboard')->group(function () {
 
-    Route::get('/', 'dashboard')->name('dashboard');
-    Route::get('/login', 'create_login_admin')->name('create_login_admin');
+    Route::get('/', 'dashboard')->name('dashboard')->middleware('CheckAdmin');
 
-    Route::get('/register_admin', 'show_register')->name('show_register');
+    Route::get('/login', 'show_login_admin')->name('show.login.admin')->middleware('CheckAdmin');
 
-    Route::post('/create_admin', 'create_admin')->name('create_admin');
+    Route::post('/don_login', 'create_login_admin')->name('create.login.admin')->middleware('CheckAdmin');
+
+
+    Route::get('/register_admin', 'show_register')->name('show_register')->middleware('CheckAdmin');
+
+    Route::post('/create_admin', 'create_admin')->name('create_admin')->middleware('CheckAdmin');
+
+    Route::get('/logout', 'logout')->name('logout.admin')->middleware('CheckAdmin');
 
 });
 
 // Catagories Route
 Route::controller(CatogriesController::class)->prefix('dashboard')->group(function () {
 
-    Route::get('/Catagories', 'ShowCatagories')->name('Show.Catagories');
+    Route::get('/Catagories', 'ShowCatagories')->name('Show.Catagories')->middleware('CheckAdmin');
 
-    Route::post('/createCatagories', 'createCatagories')->name('create.Catagories');
+    Route::post('/createCatagories', 'createCatagories')->name('create.Catagories')->middleware('CheckAdmin');
 });
 // Products Route
 Route::controller(ProductssController::class)->prefix('dashboard')->group(function () {
 
-    Route::get('/products', 'Showproducts')->name('Show.products');
+    Route::get('/products', 'Showproducts')->name('Show.products')->middleware('CheckAdmin');
 
-    Route::post('/createproducts', 'createproducts')->name('create.products');
+    Route::post('/createproducts', 'createproducts')->name('create.products')->middleware('CheckAdmin');
 });
