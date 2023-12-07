@@ -86,4 +86,12 @@ class memberController extends Controller
             return response()->json(['error' => 'unauthorised']);
         }
     }
+    public function logout()
+    {
+        if (Auth::check()) {
+            Auth::logout();
+        }
+
+        return view('User.login.login');
+    }
 }

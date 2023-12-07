@@ -42,7 +42,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> <i class="text-white fa-solid fa-user"></i></a>
+                        <a class="nav-link" href="#"> <i class="fa-solid fa-cart-shopping text-white"></i></a>
                     </li>
                     <li class="nav-item">
                         <button class=" nav-link btn btn-primary" type="button" data-bs-toggle="offcanvas"
@@ -77,7 +77,7 @@
                         </li>
                     </a>
                     <hr>
-                    <a href="#" class="nav-link">
+                    <a href="{{route('show.contact')}}" class="nav-link">
                         <li class="list-group">
                             Contact US
                         </li>
@@ -93,7 +93,7 @@
                                 <i class="text-white fa-solid fa-user dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 </i>
                                 <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">logout</a></li>
+                                  <li><a class="dropdown-item" href="{{route('logout')}}">logout</a></li>
                                   <li><a class="dropdown-item" href="./registerUser">Rigister</a></li>
                                   <li><a class="dropdown-item" href="#">Profaile</a></li>
                                 </ul>

@@ -20,7 +20,7 @@
             <div class="col-xl-9">
                 <div class="card" style="border-radius: 15px;">
                     <div class="card-body">
-                        @include('incloud.errors')
+                        @include('User.incloud.errors')
                         <form action="{{ route('new_Register') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="row align-items-center pt-4 pb-3">

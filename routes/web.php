@@ -3,9 +3,9 @@
 use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\admin\CatogriesController;
 use App\Http\Controllers\admin\ProductssController;
+use App\Http\Controllers\ContactUSController;
 use App\Http\Controllers\user\memberController;
 use App\Http\Controllers\User\ShopController;
-use App\Models\Catogries;
 use Illuminate\Support\Facades\Route;
 
 // Start User Route
@@ -31,9 +31,29 @@ Route::controller(memberController::class)->group(function () {
     // show LoginUser
     Route::get('loginUser', 'show_login')->name('show_login');
     // LoginUser
-    Route::get('login', 'login')->name('new_login');
+    Route::get('login', 'login')->name('login');
+
+    Route::get('logout', 'logout')->name('logout');
+});
+
+Route::controller(ContactUSController::class)->group(function ()  {
+
+Route::get('contactUs','show_contact')->name('show.contact');
+
+Route::post('create','create')->name('create.contact');
+
 });
 // End User Route
+
+
+
+
+
+
+
+
+
+
 
 // Start Admin Route
 // dashboard Route
