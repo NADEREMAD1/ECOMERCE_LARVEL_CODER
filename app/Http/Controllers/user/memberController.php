@@ -19,51 +19,50 @@ class memberController extends Controller
     }
     // Register User
     public function Register(UserRequest $request)
-        {
-            // Check if an image is uploaded
-            if ($request->hasFile('image')) {
+    {
+        // Check if an image is uploaded
+        if ($request->hasFile('image')) {
 
-                $image = $request->file('image');
+            $image = $request->file('image');
 
-                // Generate a unique name for the image
-                $image_name = time() . $image->getClientOriginalName();
+            // Generate a unique name for the image
+            $image_name = time() . $image->getClientOriginalName();
 
-                // Move the uploaded image to the desired directory
-                $image->move('image_member', $image_name);
-            } else {
+            // Move the uploaded image to the desired directory
+            $image->move('image_member', $image_name);
+        } else {
 
-                // If no image is uploaded, set $image_name to null
-                $image_name = null;
-            }
-
-            $user = User::create([
-
-                'name' => $request->name,
-                'email' => $request->email,
-                'password' => bcrypt($request->password),
-                'image' => $image_name,
-            ]);
-            // create Token From User
-            $token = $user->createToken($user->email)->plainTextToken;
-            $response = [
-                'name' => $user->name,
-                'email' => $user->email,
-                'token' => $token,
-            ];
-            // return response()->json($response, 200);
-            return view('welcome');
+            // If no image is uploaded, set $image_name to null
+            $image_name = null;
         }
 
-        // show Login
-        public function show_login()
-        {
-            return view('User.login.login');
-        }
+        $user = User::create([
 
-           // login User
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => bcrypt($request->password),
+            'image' => $image_name,
+        ]);
+        // create Token From User
+        $token = $user->createToken($user->email)->plainTextToken;
+        $response = [
+            'name' => $user->name,
+            'email' => $user->email,
+            'token' => $token,
+        ];
+        // return response()->json($response, 200);
+        return view('welcome');
+    }
+
+    // show Login
+    public function show_login()
+    {
+        return view('User.login.login');
+    }
+
+    // login User
     public function login(Request $request)
     {
-
         $validator = Validator::make($request->all(), [
             'email' => 'required|email',
             'password' => 'required',
@@ -81,7 +80,6 @@ class memberController extends Controller
             ];
             // return response()->json($res, 200);
             return view('welcome');
-
         } else {
             return response()->json(['error' => 'unauthorised']);
         }
@@ -93,5 +91,10 @@ class memberController extends Controller
         }
 
         return view('User.login.login');
+    }
+
+
+    public function show_profile(){
+        return view('User.profile');
     }
 }

@@ -95,7 +95,7 @@
                                 <ul class="dropdown-menu">
                                   <li><a class="dropdown-item" href="{{route('logout')}}">logout</a></li>
                                   <li><a class="dropdown-item" href="./registerUser">Rigister</a></li>
-                                  <li><a class="dropdown-item" href="#">Profaile</a></li>
+                                  <li><a class="dropdown-item" href="{{route('show.profile')}}">Profaile</a></li>
                                 </ul>
                               </div>
                     <hr>

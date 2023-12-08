@@ -1,4 +1,10 @@
 @extends('User.layout')
 @section('content')
-profile
+
+
+<div class="vh-100">
+    KLAZA
+</div>
+
+
 @endsection

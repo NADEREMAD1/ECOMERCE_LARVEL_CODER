@@ -28,12 +28,17 @@ Route::controller(memberController::class)->group(function () {
     // registerUser
     Route::post('Register', 'Register')->name('new_Register');
 
-    // show LoginUser
+    // show Login User
     Route::get('loginUser', 'show_login')->name('show_login');
-    // LoginUser
+    // Login User
     Route::get('login', 'login')->name('login');
 
+    // Logout User
     Route::get('logout', 'logout')->name('logout');
+
+    // show profile User
+    Route::get('profile', 'show_profile')->name('show.profile');
+
 });
 
 Route::controller(ContactUSController::class)->group(function ()  {
